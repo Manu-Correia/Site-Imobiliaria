@@ -1,43 +1,44 @@
-body{
+body {
     background-color: black;
     color: white;
     text-align: center;
     overflow-x: hidden;
+    font-family: 'Poppins-light';
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 /*Header do site*/
-.divHeader {                
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-top: -10px;
-  font-family: 'Poppins-medium';
+.divHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: -10px;
+    font-family: 'Poppins-medium';
 }
 
-.menuHeader nav{                
-  text-align: center;
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  padding: 5px;
-  font-size: 16px;
+.menuHeader nav {
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+    font-size: 16px;
 }
 
-.menuHeader{
+.menuHeader {
     border-radius: 60px;
     background-color: rgb(255, 255, 255);
     margin-right: -60px;
     box-shadow: rgba(0, 0, 0, 0.408) 2px 2px 10px;
 }
 
-.menuHeader a{
+.menuHeader a {
     text-decoration: none;
     color: rgb(0, 0, 0);
     transition: 0.3s;
@@ -45,64 +46,58 @@ a{
     padding: 15px 35px;
 }
 
-.menuHeader a:hover{
+.menuHeader a:hover {
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
 }
 
-.anuncieHeader a{                
-  float: right;
-  position: relative;
-  overflow: hidden;
-  color: #ffffff;
-  padding: 20px 40px;
-  font-family: 'Poppins-medium';
-  font-size: 16px;
-  border-radius: 50px;
-  background: rgba(255,255,255,0.18);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(165, 165, 165, 0.35);
-  box-shadow:
-  0 8px 30px rgba(0,0,0,0.12),
-  inset 0 1px 2px rgba(255,255,255,0.6);
-  transition: 0.3s;
+.anuncieHeader a {
+    float: right;
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+    padding: 20px 40px;
+    font-family: 'Poppins-medium';
+    font-size: 16px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(165, 165, 165, 0.35);
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.12),
+        inset 0 1px 2px rgba(255, 255, 255, 0.6);
+    transition: 0.3s;
 }
 
-.anuncieHeader a:hover{
-  background: rgba(255,255,255,0.25);
-  box-shadow: 
-  0 10px 40px rgba(0,0,0,0.15),
-  inset 0 1px 2px rgba(255,255,255,0.6);
+.anuncieHeader a:hover {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.15),
+        inset 0 1px 2px rgba(255, 255, 255, 0.6);
 }
 
-#logoHeader{
+#logoHeader {
     width: 150px;
     margin-left: 10px;
     filter: invert(100%);
     filter: brightness(100);
 }
 
-.textoPrincipal{
+.textoPrincipal {
     letter-spacing: 2px;
     font-size: 30px;
     margin-top: 40px;
 }
 
-.textoPrincipal h1{
-    font-family: 'Poppins-light';
-}
-
-.textoPrincipal span{
+.textoPrincipal span {
     font-family: 'Universal';
     font-weight: lighter;
     position: relative;
-    background: linear-gradient(
-        120deg,
-        rgba(220, 220, 220, 30),
-        rgba(255, 255, 255, 0.9),
-        rgba(255, 255, 255, 60)
-    );
+    background: linear-gradient(120deg,
+            rgba(220, 220, 220, 30),
+            rgba(255, 255, 255, 0.9),
+            rgba(255, 255, 255, 60));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -119,7 +114,7 @@ a{
 
 @font-face {
     font-family: 'Poppins-medium';
-    src: url(/assets/fonts/Poppins/Poppins-Medium.ttf) format('truetype');  
+    src: url(/assets/fonts/Poppins/Poppins-Medium.ttf) format('truetype');
 }
 
 @font-face {
@@ -132,15 +127,15 @@ a{
     src: url(/assets/fonts/universal_serif/Universal\ Serif.ttf) format('truetype');
 }
 
-.imagesMain{
+.imagesMain {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-.cirBlur{
+.cirBlur {
     position: absolute;
     width: 700px;
     height: 700px;
@@ -152,7 +147,7 @@ a{
     z-index: 0;
 }
 
-.terra{
+.terra {
     width: 900px;
     position: absolute;
     z-index: 1;
@@ -160,7 +155,7 @@ a{
     top: -140px;
 }
 
-.cidadeLinha{
+.cidadeLinha {
     width: 1200px;
     margin-left: 8%;
     position: relative;
@@ -168,13 +163,14 @@ a{
 }
 
 /*Busca de imóveis por filtro*/
+/*Parte de cima*/
 
-main.busca{
+main.busca {
     position: relative;
 }
 
-.caixaBusca{
-    padding: 20px;
+.caixaBusca {
+    padding: 30px 20px 20px;
     border-radius: 40px;
     background-color: white;
     margin-left: 10%;
@@ -184,22 +180,21 @@ main.busca{
     box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 30px;
 }
 
-.gridBusca{
+.gridBuscaCima {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.dropdownFiltro{
+.dropdownFiltro {
     position: relative;
     width: 230px;
-    font-family: 'Poppins-light';
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.dropdownAlternar{
+.dropdownAlternar {
     width: 130px;
     height: 50px;
     background: #dddddd;
@@ -216,17 +211,17 @@ main.busca{
     padding-left: 60px;
 }
 
-.iconeSeta{
+.iconeSeta {
     font-size: 15px;
     transition: 0.3s;
     margin-left: 20px;
 }
 
-.dropdownFiltro.ativo .iconeSeta{
+.dropdownFiltro.ativo .iconeSeta {
     transform: rotate(180deg);
 }
 
-.dropdownList{
+.dropdownList {
     position: absolute;
     top: 60px;
     left: 12px;
@@ -234,27 +229,27 @@ main.busca{
     background: #efefef;
     border-radius: 18px;
     padding: 16px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
     display: none;
     z-index: 5;
     box-shadow: rgba(0, 0, 0, 0.2) 2px 5px 14px;
 }
 
-.dropdownFiltro.ativo .dropdownList{
+.dropdownFiltro.ativo .dropdownList {
     display: block;
 }
 
-.dropdownBase{
+.dropdownBase {
     width: 100%;
 }
 
-.checkboxWrap{
+.checkboxWrap {
     display: flex;
     flex-direction: column;
     gap: 14px;
 }
 
-.checkboxLabel{
+.checkboxLabel {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -264,13 +259,13 @@ main.busca{
     color: #222;
 }
 
-.checkboxLabel input{
+.checkboxLabel input {
     position: absolute;
     opacity: 0;
     pointer-events: none;
 }
 
-.checkboxCustom{
+.checkboxCustom {
     width: 20px;
     height: 20px;
     border: 1.5px solid #bdbdbd;
@@ -280,12 +275,12 @@ main.busca{
     position: relative;
 }
 
-.checkboxLabel input:checked + .checkboxCustom{
+.checkboxLabel input:checked+.checkboxCustom {
     background: #111;
     border-color: #111;
 }
 
-.checkboxLabel input:checked + .checkboxCustom::after{
+.checkboxLabel input:checked+.checkboxCustom::after {
     content: "";
     position: absolute;
     left: 6px;
@@ -297,18 +292,109 @@ main.busca{
     transform: rotate(45deg);
 }
 
-.checkboxTexto{
+.checkboxTexto {
     line-height: 1.2;
 }
 
+/*Parte de Baixo*/
+.filtroPreco {
+    width: 350px;
+    border-radius: 0;
+    padding-left: 20px;
+}
+
+.valores {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.valorBox {
+    background: #000;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.divSlider {
+    position: relative;
+    width: 100%;
+    height: 40px;
+}
+
+.slider {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: #ddd;
+    border-radius: 999px;
+    transform: translateY(-50%);
+}
+
+.sliderRange {
+    position: absolute;
+    top: 50%;
+    height: 8px;
+    background: #f5a300;
+    border-radius: 999px;
+    transform: translateY(-50%);
+}
+
+.inputRange {
+    position: absolute;
+    width: 100%;
+    top: 47%;
+    transform: translateY(-50%);
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    appearance: none;
+    left: 0;
+}
+
+.inputRange::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    background: #f5a300;
+    border-radius: 50%;
+    cursor: pointer;
+    pointer-events: auto;
+    border: none;
+    box-shadow: 0 0 0 2px #f5a300;
+}
+
+.inputRange::-moz-range-thumb {
+    width: 22px;
+    height: 22px;
+    background: #f5a300;
+    border-radius: 50%;
+    cursor: pointer;
+    pointer-events: auto;
+    border: none;
+    box-shadow: 0 0 0 2px #f5a300;
+}
+
+.inputRange::-webkit-slider-runnable-track {
+    background: transparent;
+}
+
+.inputRange::-moz-range-track {
+    background: transparent;
+}
+
 /*Imóveis em destaque*/
-.divPrincipal{
+.divPrincipal {
     background-color: white;
     width: 101%;
     height: 600px;
     position: relative;
     z-index: 2;
     top: -40px;
-
-
 }
