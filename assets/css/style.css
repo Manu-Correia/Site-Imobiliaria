@@ -297,10 +297,20 @@ main.busca {
 }
 
 /*Parte de Baixo*/
-.filtroPreco {
-    width: 350px;
-    border-radius: 0;
+
+.gridBuscaBaixo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
     padding-left: 20px;
+    padding-right: 10px;
+}
+
+
+.filtroPreco {
+    width: 390px;
+    border-radius: 0;
 }
 
 .valores {
@@ -389,12 +399,56 @@ main.busca {
     background: transparent;
 }
 
+.inputCodigo {
+    width: 350px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background: #e2e2e2;
+    padding: 0 28px;
+    font-size: 15px;
+    font-family: 'Poppins-light';
+    color: black;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.inputCodigo::placeholder {
+    color: #a9a9a9;
+    font-weight: 200;
+}
+
+.botaoBusca {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 20px);
+}
+
+.btnBuscar{
+    border-radius: 999px;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 30px 90px;
+    font-size: 20px;
+    font-family: 'Poppins-medium';
+    position: relative;
+    top: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btnBuscar:hover {
+  transform: scale(1.03);
+}
+
 /*Imóveis em destaque*/
 .divPrincipal {
     background-color: white;
     width: 101%;
-    height: 600px;
+    height: 1000px;
     position: relative;
     z-index: 2;
-    top: -40px;
+    top: -120px;
 }

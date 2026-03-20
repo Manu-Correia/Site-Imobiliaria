@@ -57,7 +57,7 @@
         <img src="/assets/images/Terra.png" alt="Planeta Terra" class="terra" />
         <div class="cirBlur"></div>
       </div>
-      <div class="caixaBusca">
+      <form class="caixaBusca">
         <div class="gridBuscaCima">
           <div class="dropdownFiltro">
             <div
@@ -248,38 +248,53 @@
           </div>
         </div>
 
-        <div class="filtroPreco">
-          <div class="valores">
-            <div class="valorBox" id="valorMin">R$ 0</div>
-            <div class="valorBox" id="valorMax">R$ 1.500.000 +</div>
+        <div class="gridBuscaBaixo">
+          <div class="filtroPreco">
+            <div class="valores">
+              <div class="valorBox" id="valorMin">R$ 0</div>
+              <div class="valorBox" id="valorMax">R$ 1.500.000 +</div>
+            </div>
+
+            <div class="divSlider">
+              <div class="slider"></div>
+              <div class="sliderRange" id="sliderRange"></div>
+
+              <input type="hidden" name="precoMin" id="inputPrecoMin">
+
+              <input
+                type="range"
+                min="0"
+                max="1500000"
+                value="0"
+                step="10000"
+                id="rangeMin"
+                class="inputRange"
+              />
+
+              <input type="hidden" name="precoMax" id="inputPrecoMax">
+
+              <input
+                type="range"
+                min="0"
+                max="1500000"
+                value="1500000"
+                step="10000"
+                id="rangeMax"
+                class="inputRange"
+              />
+            </div>
           </div>
 
-          <div class="divSlider">
-            <div class="slider"></div>
-            <div class="sliderRange" id="sliderRange"></div>
-
-            <input
-              type="range"
-              min="0"
-              max="1500000"
-              value="0"
-              step="10000"
-              id="rangeMin"
-              class="inputRange"
-            />
-
-            <input
-              type="range"
-              min="0"
-              max="1500000"
-              value="1500000"
-              step="10000"
-              id="rangeMax"
-              class="inputRange"
-            />
+          <div class="botaoBusca">
+            <button type="submit" class="btnBuscar">Buscar</button>
           </div>
+
+          <div class="campoCodigo">
+            <input type="text" placeholder="Código" class="inputCodigo" name="codigo" id="codigo" maxlength="3">
+          </div>
+
         </div>
-      </div>
+      </form>
 
       <section class="principal">
         <div class="divPrincipal"></div>
