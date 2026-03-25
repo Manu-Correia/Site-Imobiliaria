@@ -1,7 +1,7 @@
 const imoveis = [
   {
     id: 1,
-    codigo: "M01",
+    codigo: "001",
     titulo: "Casa com quintal e area gourmet",
     finalidade: "venda",
     categoria: "Casa",
@@ -20,7 +20,7 @@ const imoveis = [
   },
   {
     id: 2,
-    codigo: "M02",
+    codigo: "002",
     titulo: "Apartamento moderno proximo a servicos",
     finalidade: "venda",
     categoria: "Apartamento",
@@ -39,7 +39,7 @@ const imoveis = [
   },
   {
     id: 3,
-    codigo: "M03",
+    codigo: "003",
     titulo: "Sala comercial para locacao no centro",
     finalidade: "locacao",
     categoria: "Comercial",
@@ -58,7 +58,7 @@ const imoveis = [
   },
   {
     id: 4,
-    codigo: "M04",
+    codigo: "004",
     titulo: "Terreno residencial em bairro tranquilo",
     finalidade: "venda",
     categoria: "Terreno",
@@ -77,7 +77,7 @@ const imoveis = [
   },
   {
     id: 5,
-    codigo: "M05",
+    codigo: "005",
     titulo: "Casa para locacao com 2 quartos",
     finalidade: "locacao",
     categoria: "Casa",
@@ -96,7 +96,7 @@ const imoveis = [
   },
   {
     id: 6,
-    codigo: "M06",
+    codigo: "006",
     titulo: "Apartamento compacto para locacao",
     finalidade: "locacao",
     categoria: "Apartamento",
