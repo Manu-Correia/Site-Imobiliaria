@@ -1,6 +1,6 @@
 import type { GetServerSideProps } from "next";
 import Layout from "../src/components/Layout";
-import SearchForm from "../src/components/SearchForm";
+import FormBusca from "../src/components/FormBusca";
 import ImovelCard from "../src/components/ImovelCard";
 import { empresa } from "../src/lib/empresa";
 import {
@@ -27,7 +27,26 @@ export default function Home({
         <div className="textoPrincipal">
           <h1>
             Encontre o imovel ideal <br />
-            com a <span className="mondialle">MONDIALLE</span>
+            <span className="linhaHero">
+            <span>com a{" "}</span>
+            <span
+              className="mondialle"
+              onMouseMove={(event) => {
+                const bounds = event.currentTarget.getBoundingClientRect();
+                const x = event.clientX - bounds.left;
+                const y = event.clientY - bounds.top;
+
+                event.currentTarget.style.setProperty("--mouse-x", `${x}px`);
+                event.currentTarget.style.setProperty("--mouse-y", `${y}px`);
+              }}
+              onMouseLeave={(event) => {
+                event.currentTarget.style.setProperty("--mouse-x", "50%");
+                event.currentTarget.style.setProperty("--mouse-y", "50%");
+              }}
+            >
+              MONDIALLE
+            </span>
+            </span>
           </h1>
         </div>
 
@@ -46,7 +65,7 @@ export default function Home({
         </div>
       </section>
 
-      <SearchForm
+      <FormBusca
         action="/imoveis"
         busca={busca}
         catalogo={catalogo}
