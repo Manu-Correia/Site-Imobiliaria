@@ -26,7 +26,6 @@ export default function ListagemPage({
       title={cabecalho}
       page={pagina}
       empresa={empresa}
-      extraStyles={["/assets/css/vendaLocacao.css"]}
     >
       <main className="vendaLocacao">
         <section className="tituloPagina">
