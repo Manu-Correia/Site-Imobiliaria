@@ -5,40 +5,67 @@ import { imoveis } from "../src/lib/imoveis";
 
 export default function SobrePage() {
   return (
-    <Layout title="Sobre a Mondialle" page="sobre" empresa={empresa}>
-      <main className="internalPage">
-        <PageHero
-          eyebrow="Institucional"
-          title="Sobre a Mondialle"
-          description="Estruturamos a plataforma para que clientes encontrem opcoes de venda e locacao com filtros claros, codigos de imovel e contato direto com a equipe."
-        />
+    <Layout
+      title="Sobre a Mondialle"
+      page="sobre"
+      empresa={empresa}
+      stylesheets={["/assets/css/sobre.css"]}
+    >
+      <main className="paginaSobre">
+        <section className="heroSobre">
+          <div className="divHeroSobre">
+            <p className="institucional">INSTITUCIONAL</p>
 
-        <section className="contentSection infoGrid">
-          <article className="infoCard">
-            <h2>Atendimento local</h2>
-            <p>
-              Atuacao focada em Uniao da Vitoria, Porto Uniao e regiao, com apoio
-              para avaliacao, captacao e intermediacao.
-            </p>
-          </article>
+            <h1>
+              Sobre a <br />
+              <span className="mondialleSobre">MONDIALLE</span>
+            </h1>
 
-          <article className="infoCard">
-            <h2>Catalogo organizado</h2>
-            <p>
-              Hoje a plataforma ja conta com <strong>{imoveis.length}</strong>{" "}
-              imoveis de exemplo estruturados para busca por finalidade,
-              localizacao e preco.
-            </p>
-          </article>
+            <p className="textoIntro">Conectamos pessoas, patrimônios e oportunidades com segurança, 
+              transparência e visão estratégica.</p>
+          </div>
 
-          <article className="infoCard">
-            <h2>Base para crescer</h2>
-            <p>
-              O site agora roda em Next.js e pode evoluir para cadastro
-              administrativo, banco de dados e integracoes.
-            </p>
-          </article>
+          <img src="/assets/images/Faixada_mondialle.png" alt="Foto da mondialle" />
+          <div className="cirBlur3"></div>
         </section>
+
+        <div className="divPrincipal">
+          <div className="textProposito">
+            <p>
+              A  <span className="propMondialle"> Mondialle </span>  
+              nasceu com o propósito de oferecer uma experiência imobiliária mais humana, 
+              segura e eficiente. Atuamos com 
+              <span className="prop01"> seriedade </span>, 
+              <span className="prop02"> atenção aos detalhes </span> e  
+              <span className="prop03"> compromisso com cada etapa do processo </span>, 
+              ajudando nossos clientes a tomar decisões com confiança.
+            </p>
+          </div>
+
+          <div className="divPorque">
+            <img src="/assets/images/Faixada_mondialle.png" alt="Foto do porque" />
+            <div className="textPorque">
+              <h2>Porque escolher a Mondialle?</h2>
+
+              <p>Cada cliente possui uma necessidade única. 
+                Por isso, a Mondialle trabalha com atendimento próximo, 
+                estratégia personalizada e total transparência, 
+                oferecendo suporte completo para quem busca segurança e 
+                tranquilidade em cada decisão.</p>
+
+              <span><i className="fa-solid fa-circle-check" />Atendimento próximo e personalizado</span><br />
+              <span><i className="fa-solid fa-circle-check" />Transparência em todas as etapas</span><br />
+              <span><i className="fa-solid fa-circle-check" />Conhecimento de mercado</span><br />
+              <span><i className="fa-solid fa-circle-check" />Soluções imobiliárias e ambientais</span>
+            </div>
+          </div>
+
+          <div className="citacao">
+            <h3>“A qualidade é lembrada muito depois que o preço é esquecido.”</h3>
+            <p>- Aldo Gucci</p>
+          </div>
+
+        </div>
       </main>
     </Layout>
   );

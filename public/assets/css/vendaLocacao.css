@@ -14,6 +14,7 @@
     position: relative;
     z-index: 2;
     top: -200px;
+    padding-bottom: 60px;
 }
 
 .cirBlur2 {
@@ -42,7 +43,7 @@
 }
 
 
-.destaque {
+.destaque2 {
     padding: 30px 70px;
     visibility: inherit;
 }
@@ -56,7 +57,7 @@
 
 }
 
-.gridImoveis {
+.gridImoveis2 {
     color: var(--color-text-dark);
     display: grid;
     grid-template-columns: repeat(4, 340px);
@@ -105,28 +106,28 @@
     font-weight: 600;
 }
 
-.nomeCard {
+.nomeCard2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-left: 20px;
 }
 
-.nomeCard a {
-    font-size: 21px;
+.nomeCard2 a {
+    font-size: 20px;
     font-family: 'Poppins-bold';
     margin: 0;
     line-height: 30px;
     color: #000;
 }
 
-.nomeCard p {
+.nomeCard2 p {
     color: var(--color-descricao);
     font-weight: 600;
     margin-top: 10px;
 }
 
-.nomeCard span {
+.nomeCard2 span {
     color: var(--color-descricao);
     margin-right: 20px;
     font-family: var(--font-medium);
@@ -134,7 +135,7 @@
     font-family: 18px;
 }
 
-.atributos {
+.atributos2 {
     display: flex;
     gap: 30px;
     font-size: 15px;
@@ -178,6 +179,8 @@
     color: var(--color-text);
 }
 
+/*Página de não encontrado*/
+
 .naoEncontrado{
     color: var(--color-text-dark);
     text-align: center;
@@ -191,4 +194,70 @@
 
 .naoEncontrado p{
     font-size: 18px;
+}
+
+/*parte de paginação*/
+
+.paginas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 0px 4px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    background: #d9d9d9;
+    border-radius: 999px;
+}
+
+.paginaItem {
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    color: #111;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 30%;
+    transition: 0.3s;
+}
+
+.paginaItem:hover {
+    background-color: #c4c4c4;
+}
+
+.paginaItem.ativa {
+    font-family: 'Poppins-medium';
+}
+
+.setaPaginas1 {
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    color: #111;
+    cursor: pointer;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    transform: rotate(90deg);
+}
+
+.setaPaginas2 {
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    color: #111;
+    cursor: pointer;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+}
+
+.paginaItem:disabled,
+.setaPaginas1:disabled,
+.setaPaginas2:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
 }

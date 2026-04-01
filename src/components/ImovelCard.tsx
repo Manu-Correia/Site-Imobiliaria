@@ -2,11 +2,11 @@ import Link from "next/link";
 import { formatarFinalidade, formatarPreco } from "../lib/formatar";
 import type { Imovel } from "../lib/types";
 
-interface PropertyCardProps {
+interface ImovelCardProps {
   imovel: Imovel;
 }
 
-export default function PropertyCard({ imovel }: PropertyCardProps) {
+export default function ImovelCard({ imovel }: ImovelCardProps) {
   return (
     <article className="cardImovel">
       <span className="propriedadeTag">
@@ -17,7 +17,7 @@ export default function PropertyCard({ imovel }: PropertyCardProps) {
         <img src={imovel.imagem} alt={imovel.titulo} className="imagemImovel" />
       </Link>
 
-      <div className="infoCard">
+      <div className="cardGrid">
         <div className="info">
           <span>{imovel.categoria}</span>
           <span>Cod. {imovel.codigo}</span>

@@ -105,7 +105,7 @@ function DropdownFiltro({
   );
 }
 
-interface SearchFormProps {
+interface FormBuscaProps {
   action: string;
   busca: BuscaImoveis;
   catalogo: OpcoesCatalogo;
@@ -113,13 +113,13 @@ interface SearchFormProps {
   textoBotao: string;
 }
 
-export default function SearchForm({
+export default function FormBusca({
   action,
   busca,
   catalogo,
   consulta,
   textoBotao,
-}: SearchFormProps) {
+}: FormBuscaProps) {
   const codigoSelecionado =
     typeof consulta.codigo === "string" ? consulta.codigo : "";
   const precoMaximoInicial =
